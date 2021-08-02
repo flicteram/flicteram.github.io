@@ -1,0 +1,198 @@
+
+body{
+    color:white;
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-shadow: 5px 5px 8px whitesmoke;
+}
+.top-container{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+}
+#crypto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width:300px;
+}
+.img-crypto{
+    align-self: center;
+}
+#crypto p{
+    width:100%;
+    margin:0;
+}
+.crypto-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0;
+    height:100vh;
+    box-sizing: border-box;
+    padding:15px;
+}
+.current-price,
+.price-high,
+.price-low{
+    font-size:1.4rem;
+    font-weight: 700;
+}
+#crypto>p{
+    font-size:1.1rem;
+    font-weight: 700;
+}
+#form-submit{
+  margin-bottom:30px;
+  display:flex;
+  flex-direction: column;
+  max-width:200px;
+}
+#input-search-crypto, #button-submit{
+    margin-bottom:.1em;
+    border-radius:10px;
+    border:none;
+    font-size:1.2rem;
+}
+#button-submit{
+    cursor: pointer;
+    transform: scale(1);
+    transition:transform, 150ms;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+}
+#button-submit:hover{
+    transform: scale(1.01);
+    background-color:rgb(29, 28, 28);
+    color:white;
+}
+#weather-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+.city-display{
+    width:100%;
+    text-align:right;
+    margin-top:-30px;
+    font-size:2rem;
+    margin-right:10px;
+}
+.image-weather{
+    width:75px;
+}
+.degrees-display{
+   margin-left:-10px;
+   font-size:2.2rem;
+}
+.time-now{
+    font-size:3rem;
+}
+
+/* =============
+  SOCIAL MEDIA
+  ==============*/  
+
+  .middle{
+      align-self: center;
+  }
+
+  .social-icons>a>img{
+      max-width:50px;
+      cursor: pointer;
+      background-color: white;
+      transform:scale(1);
+      transition:transform, 300ms;
+  } 
+  
+  .social-icons>a>img:hover{
+      transform:scale(1.1);
+      background-color:blanchedalmond;
+  }
+
+  /* ToDO */
+
+  .bottom{
+      display: flex;
+      justify-content: space-between;
+  }
+  #buttom-hour-author{
+       margin-top:120px;
+  }
+  #display-todo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+  }
+  #all-todo-container{
+      border:1px solid black;
+      text-align: center;
+      width:450px;
+      background-color: black;
+      opacity: 0.7;
+  }
+  li{
+      list-style:decimal;
+      border-bottom:1px solid black;
+      font-size:1.2rem;
+  }
+.form-todo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:5px;
+
+}
+.form-todo>input,
+.form-todo>button{
+    font-size: 1rem;
+    margin-top:2.5px;
+    border:none;
+    border-radius:5px;
+}
+.form-todo>button{
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+.form-todo>button:hover{
+    background-color: black;
+    color:white;
+    transform: scale(1.05);
+}
+
+/*MOBILE */
+
+@media (max-width:680px){
+    .bottom{
+        flex-direction: column-reverse;
+    }
+    #all-todo-container{
+        width: 100%;
+    }
+    .current-price,
+    .price-high,
+    .price-low{
+        font-size:1.2rem;
+        font-weight: 700;
+}   
+#input-search-crypto, #button-submit{
+    font-size:1.1rem;
+}
+}
